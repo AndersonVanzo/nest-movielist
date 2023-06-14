@@ -15,11 +15,11 @@ export class MoviesService {
   }
 
   findAll() {
-    return `This action returns all movies`;
+    return this.movieRepository.find();
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} movie`;
+    return this.movieRepository.findOneBy({ id });
   }
 
   update(id: number, updateMovieDto: UpdateMovieDto) {
