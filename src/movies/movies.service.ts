@@ -27,6 +27,6 @@ export class MoviesService {
   }
 
   remove(id: number) {
-    return `This action removes a #${id} movie`;
+    return this.movieRepository.delete(id);
   }
 }
