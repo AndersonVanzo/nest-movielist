@@ -23,7 +23,7 @@ export class MoviesService {
   }
 
   update(id: number, updateMovieDto: UpdateMovieDto) {
-    return `This action updates a #${id} movie`;
+    return this.movieRepository.update(id, updateMovieDto);
   }
 
   remove(id: number) {
