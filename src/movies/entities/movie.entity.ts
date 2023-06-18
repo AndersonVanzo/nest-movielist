@@ -8,7 +8,7 @@ export class Movie {
   @Column()
   name: string;
 
-  @Column()
+  @Column({ nullable: true })
   image: string;
 
   @Column()
